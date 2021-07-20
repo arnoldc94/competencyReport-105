@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Users</title>
+
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+   <header>
+        <nav>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="users.html">List Users</a></li>
+                <li class = "active"><a href="register.html">Register User</a></li>
+            </ul>
+            <div class="menu-info">
+                <label>3 users</label>
+            </div>
+        </nav>
+        
+        <h1>Register a new user into the system</h1>
+    </header>
+
+    <main class="capture-form"></div>
+        <div id="alertError" class="password-error alert-error hide">
+            Error
+        </div>
+
+        <h3 id="hForm">User Information</h3>
+
+    
+        <div class="control">
+            <label for="Email">Email</label>
+            <input id="txtEmail" type="email">
+        </div>
+        <div class="control">
+            <label for="password">Password</label>
+            <input id="txtPassword" type="password">
+        </div>
+        <div class="control">
+            <label for="fn">First Name</label>
+            <input id="txtFirst" type="text">
+        </div>
+        <div class="control">
+            <label for="ln">Last Name</label>
+            <input id="txtLast" type="text">
+        </div>
+        <div class="control">
+            <label for="age">Age</label>
+            <input id="txtAge" type="number">
+        </div>
+        <div class="control">
+            <label for="Phone">Phone</label>
+            <input id="txtPhone" type="tel">
+        </div>
+        <div class="control">
+            <label for="address">Address</label>
+            <input id="txtAddress" type="text">
+        </div>
+        <div class="control">
+            <label>Payment</label>
+            <select id="selPayment">
+                <option>PayPal</option>
+                <option>Check</option>
+                <option>Cash</option>
+                <option>Video Games</option>
+            </select>
+        </div>
+        <div class="control">
+            <label>Color</label>
+            <input id="selColor" type="color">
+        </div>
+        <div class="control">
+            <div class="button-container">
+                <button id="btnSave">Register User</button>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    <script src="script/storageManager.js"></script>
+    <script src="script/menu.js"></script>
+    <script src="script/register.js"></script>
+</body>
+</html>
